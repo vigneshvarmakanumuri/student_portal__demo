@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scoreboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .scoreboard {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .match-info, .score-details {
+            margin-bottom: 15px;
+        }
+        .match-info p, .score-details p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        .team-score {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+        }
+        .team-score:first-of-type {
+            border-top: none;
+        }
+        .team-name {
+            flex-basis: 60%;
+        }
+        .runs-wickets {
+            flex-basis: 40%;
+            text-align: right;
+        }
+        .status {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>Live Cricket Score</h1>
+
+        <div class="match-info">
+            <p><strong>Match:</strong> India vs Australia - 3rd ODI</p>
+            <p><strong>Venue:</strong> Wankhede Stadium, Mumbai</p>
+        </div>
+
+        <div class="score-details">
+            <div class="team-score">
+                <span class="team-name">India</span>
+                <span class="runs-wickets">250/5 (40 Overs)</span>
+            </div>
+            <div class="team-score">
+                <span class="team-name">Australia</span>
+                <span class="runs-wickets">180/7 (35 Overs)</span>
+            </div>
+        </div>
+
+        <p class="status">Australia needs 71 runs in 5 overs with 3 wickets remaining.</p>
+    </div>
+</body>
+</html>
